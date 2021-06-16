@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;900&display=swap");
+
+:root {
+  --primary-color: #024379;
+  --secondary-color: #87bae3;
+  --tertiary-color: #49c2e6;
+  --quaternary-color: #59dfeb;
+  --quinary-color: #59ebb5;
+  --primary-text-color: white;
+  --secondary-text-color: #222;
+  --tertiary-text-color: #222;
+  --quaternary-color: #333;
+  --quinary-text-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--secondary-text-color);
+}
+
+.content {
+  display: grid;
+}
+
+.container {
+  width: 100%;
+}
+
+header,
+main,
+footer {
+  display: grid;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  padding: 2rem;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+main {
+  display: flex;
+  min-height: calc(100vh - 11.85rem);
+}
+
+footer {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
+
+.menu {
+  flex: 1;
+  min-width: 20rem;
+  min-height: calc(100vh - 10.88rem);
+  padding: 2rem;
+
+  background-color: var(--primary-text-color);
+  color: var(--primary-color);
+}
