@@ -17,6 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 html {
@@ -68,7 +69,7 @@ footer {
   color: var(--primary-text-color);
 }
 
-.menu {
+.menu-content {
   flex: 1;
   min-width: 20rem;
   min-height: calc(100vh - 10.88rem);
@@ -76,4 +77,16 @@ footer {
 
   background-color: var(--primary-text-color);
   color: var(--primary-color);
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+.button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(221, 221, 221);
+  cursor: pointer;
 }

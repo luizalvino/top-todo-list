@@ -1,11 +1,26 @@
+import { dom, library } from "@fortawesome/fontawesome-svg-core";
+import { faCheckSquare, faSquare } from "@fortawesome/free-regular-svg-icons";
+import {
+  faCheck,
+  faEdit,
+  faPlus,
+  faTasks,
+  faTimes,
+  faTrash,
+} from "@fortawesome/free-solid-svg-icons";
+import MainPage from "./pages/mainPage";
 import "./styles/style.css";
-import { library, dom } from "@fortawesome/fontawesome-svg-core";
-import { faTasks } from "@fortawesome/free-solid-svg-icons/faTasks";
-// import "@fortawesome/fontawesome-free/css/";
 
-import MainPage from "./components/mainPage";
-
-library.add(faTasks);
+library.add(
+  faTasks,
+  faPlus,
+  faTrash,
+  faSquare,
+  faCheckSquare,
+  faCheck,
+  faTimes,
+  faEdit
+);
 dom.watch();
 
-document.querySelector("body").innerHTML = MainPage();
+document.querySelector("body").appendChild(MainPage());

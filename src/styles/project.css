@@ -1,0 +1,89 @@
+.project h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.project ul {
+  margin-top: 1rem;
+}
+
+.project ul li {
+  display: flex;
+  padding: 0.5rem;
+
+  border: 1px solid var(--secondary-text-color);
+  border-top: none;
+
+  background: #fafafa;
+
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.project ul li:first-child {
+  border-top: 1px solid var(--secondary-text-color);
+}
+
+.project ul li:hover {
+  opacity: 0.7;
+}
+
+.project ul li.completed .title {
+  text-decoration: line-through;
+}
+
+.project ul li [aria-label*="completed"] {
+  justify-self: start;
+  cursor: pointer;
+  margin-right: 0.4rem;
+}
+
+.project .title {
+  flex: auto;
+  justify-self: start;
+}
+
+.project .due-date {
+  justify-self: end;
+  margin-right: 1rem;
+}
+
+.project button[aria-label*="edit"] {
+  justify-self: end;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.project button[aria-label*="remove"] {
+  justify-self: end;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.project button[aria-label="add"] {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(221, 221, 221);
+
+  cursor: pointer;
+}
+
+.project .priority-1 {
+  background-color: rgb(110, 202, 149);
+  color: white;
+}
+
+.project .priority-2 {
+  background-color: rgb(248, 227, 37);
+  color: white;
+}
+
+.project .priority-3 {
+  background-color: rgb(243, 101, 101);
+  color: white;
+}

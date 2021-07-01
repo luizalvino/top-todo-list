@@ -1,0 +1,44 @@
+.menu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu li {
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.menu li:hover {
+  background-color: #dfdfdf;
+  border-radius: 0.3rem;
+}
+
+.menu li:hover,
+.menu li:hover button,
+.active button {
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.menu button {
+  flex: 1;
+  border: 0;
+  padding: 0.5rem;
+  background: transparent;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.menu li,
+.menu button {
+  color: var(--primary-color);
+}
+
+.menu [aria-label="add-project"] {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(221, 221, 221);
+  font-size: 1rem;
+}

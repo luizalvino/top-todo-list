@@ -1,0 +1,26 @@
+.new-todo-item .form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-todo-item .form-control :first-child {
+  font-weight: bold;
+  padding: 0.2rem 0;
+}
+
+.new-todo-item .form-control input {
+  padding: 0.7rem;
+  border: 0;
+}
+
+.new-todo-item .form-control .row {
+  flex-direction: row;
+}
+
+.new-todo-item .button {
+  padding: 1rem;
+}
+
+.new-todo-item .form-actions {
+  margin-top: 1rem;
+}
